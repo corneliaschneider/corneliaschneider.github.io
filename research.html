@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | Cornelia Schneider</title>
+<meta name="description" content="Research of Cornelia Schneider at the interface of function spaces, partial differential equations and approximation theory: regularity on non-smooth domains, deep neural networks, space-time adaptivity, approximation classes and nonlocal models.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='25' x='5' font-size='24' font-family='Georgia,serif' fill='%238B3038'>S</text></svg>">
+<script src="assets/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">Cornelia <span>Schneider</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html">About</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="kicker xl">Research</h1>
+      <h2 class="page-sub">Regularity, approximation and adaptivity</h2>
+      <div class="rule"></div>
+      <p>I work at the interface of function spaces, partial differential equations and approximation
+        theory, with growing connections to deep neural networks and nonlocal models. The regularity
+        of a function determines how efficiently it can be approximated, and this principle connects
+        my theoretical work on Sobolev, Besov and Kondratiev spaces with adaptive finite element and
+        wavelet methods, sampling algorithms and neural network approximation. It applies to
+        low-dimensional problems with difficult geometry as well as to high-dimensional settings in
+        which dimension-independent approximation is essential.</p>
+
+      <ul class="linkrow jumprow">
+        <li><a href="#programme">Overview</a></li>
+        <li><a href="#directions">Current directions</a></li>
+        <li><a href="#projects">Projects A–F</a></li>
+        <li><a href="#network">Scientific network</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="programme">
+    <div class="container">
+      <figure class="research-figure top">
+        <div class="scroll-x">
+          <img src="assets/research-overview.png" alt="Four interlinked research areas around the centre 'Applied Analysis': approximation theory, regularity theory, adaptive schemes and function spaces, each with its main keywords." width="1800" height="1012">
+        </div>
+        <figcaption>Approximation theory, regularity theory, adaptive schemes and function spaces —
+          the four interacting pillars of my work in applied analysis.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section band" id="directions">
+    <div class="container">
+      <h2 class="kicker lg">Current directions</h2>
+      <div class="card-grid">
+        <a class="card" href="#a">
+          <span class="card-label">A</span>
+          <h3>Regularity of PDEs</h3>
+          <p>Sobolev and Besov regularity on non-smooth domains and manifolds, with a view toward
+            adaptive approximation.</p>
+          <span class="card-more">Project A <span aria-hidden="true">&darr;</span></span>
+        </a>
+        <a class="card" href="#b">
+          <span class="card-label">B</span>
+          <h3>Neural network approximation</h3>
+          <p>Network-realizable bases, sampling recovery and approximation rates beyond the curse of
+            dimensionality.</p>
+          <span class="card-more">Project B <span aria-hidden="true">&darr;</span></span>
+        </a>
+        <a class="card" href="#c">
+          <span class="card-label">C</span>
+          <h3>Space-time adaptivity</h3>
+          <p>Tensor-wavelet methods and function spaces of dominating mixed smoothness for
+            evolutionary problems.</p>
+          <span class="card-more">Project C <span aria-hidden="true">&darr;</span></span>
+        </a>
+        <a class="card" href="#d">
+          <span class="card-label">D</span>
+          <h3>Nonlocal gradients</h3>
+          <p>Variable-order and variable-exponent spaces motivated by heterogeneous materials and
+            peridynamics.</p>
+          <span class="card-more">Project D <span aria-hidden="true">&darr;</span></span>
+        </a>
+        <a class="card" href="#e">
+          <span class="card-label">E</span>
+          <h3>Approximation classes</h3>
+          <p>Direct and inverse estimates for adaptive finite element schemes and time-dependent
+            PDEs.</p>
+          <span class="card-more">Project E <span aria-hidden="true">&darr;</span></span>
+        </a>
+        <a class="card" href="#f">
+          <span class="card-label">F</span>
+          <h3>Function spaces</h3>
+          <p>Traces, embeddings, weighted smoothness and constructive decompositions in modern
+            scales of spaces.</p>
+          <span class="card-more">Project F <span aria-hidden="true">&darr;</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="kicker lg">The projects in detail</h2>
+
+      <article class="project has-figure" id="a">
+        <div class="project-letter" aria-hidden="true">A</div>
+        <div>
+          <h3>Regularity of (S)PDEs on non-smooth domains and manifolds</h3>
+          <p>I study Sobolev and Besov regularity for elliptic, parabolic and hyperbolic problems on
+            domains with corners, edges and other singularities. The central goal is to explain
+            rigorously when adaptive approximation can outperform uniform methods: adaptivity pays
+            off precisely where the Besov regularity of a solution exceeds its Sobolev
+            regularity.</p>
+          <p>Current directions include evolutionary PDEs, stochastic problems, Lipschitz manifolds
+            and long-term questions connected with the Navier–Stokes equations.</p>
+          <p>The Besov regularity is usually obtained via weighted Sobolev (Kondratiev) spaces,
+            whose weight measures the distance to the singular set of the domain, while non-adaptive
+            schemes are governed by regularity in fractional Sobolev spaces. For elliptic problems
+            this picture is essentially complete; for hyperbolic conservation laws, regularity
+            results are so far limited to the one-dimensional case.</p>
+        </div>
+        <figure class="project-figure">
+          <img src="assets/figures/project-a.png" alt="Besov versus Sobolev smoothness in the DeVore–Triebel diagram: the adaptive and the uniform approximation line." loading="lazy">
+          <figcaption>Besov versus Sobolev smoothness in the DeVore–Triebel diagram: the adaptive and the uniform approximation line.</figcaption>
+        </figure>
+      </article>
+
+      <article class="project has-figure" id="b">
+        <div class="project-letter" aria-hidden="true">B</div>
+        <div>
+          <h3>Approximation with deep neural networks</h3>
+          <p>This project investigates systems of piecewise polynomial functions that are exactly
+            representable by ReLU-type networks and form bases of Lebesgue, Sobolev and Barron
+            spaces. The basis perspective keeps the approximation constants explicit and, in suitable
+            settings, avoids the curse of dimensionality.</p>
+          <p>Next steps include higher-order activations, smoothness beyond one, integrability
+            indices other than two, sampling recovery and applications to PDE approximation.</p>
+          <p>Daubechies, DeVore, Foucart, Hanin and Petrova introduced such a system for
+            <em>L</em><sub>2</sub>([0,1]); we extended it to the multivariate setting and showed that
+            it also forms a Riesz basis for Sobolev spaces and Barron classes of smoothness below
+            one. Because the proofs avoid local approximations, the implicit constants remain
+            visible, which is what makes the dimension-independent rates provable.</p>
+        </div>
+        <figure class="project-figure">
+          <img src="assets/figures/project-b.png" alt="A deep ReLU network realising the basis functions." loading="lazy">
+          <figcaption>A deep ReLU network realising the basis functions.</figcaption>
+        </figure>
+      </article>
+
+      <article class="project has-figure" id="c">
+        <div class="project-letter" aria-hidden="true">C</div>
+        <div>
+          <h3>Space-time adaptivity via tensor wavelets</h3>
+          <p>Fully adaptive space-time schemes can exploit anisotropy in both the spatial and the
+            temporal variable. I investigate their connection with Besov spaces of dominating mixed
+            smoothness, where the achievable rate no longer depends on the spatial dimension, and
+            compare them with uniform tensor-product and time-marching methods.</p>
+          <p>The programme begins on product domains and extends toward non-smooth geometries such
+            as <em>L</em>-shaped domains and the Fichera corner.</p>
+          <p>Adaptive methods reach a rate <em>O</em>(<em>N</em><sup>−α/<em>d</em></sup>) that
+            still degrades with the spatial dimension <em>d</em>, whereas tensor-wavelet schemes reach
+            <em>O</em>(<em>N</em><sup>−α</sup>). The comparison with non-adaptive schemes is delicate,
+            since those are governed by Sobolev rather than Besov spaces of dominating mixed
+            smoothness, a far more restrictive condition.</p>
+        </div>
+        <figure class="project-figure">
+          <img src="assets/figures/project-c.png" alt="The Fichera corner, a model domain with edge and vertex singularities." loading="lazy">
+          <figcaption>The Fichera corner, a model domain with edge and vertex singularities.</figcaption>
+        </figure>
+      </article>
+
+      <article class="project" id="d">
+        <div class="project-letter" aria-hidden="true">D</div>
+        <div>
+          <h3>Nonlocal gradients and variable-order models</h3>
+          <p>Motivated by peridynamics and heterogeneous materials, I study nonlocal gradients with
+            anisotropic kernels, spatially varying smoothness and variable integrability. These
+            models lead to new spaces of nonlocal Sobolev type and to questions about embeddings,
+            compactness and existence.</p>
+          <p>A central goal is to quantify the nonlocal-to-local limit with explicit rates and to
+            develop adaptive numerical schemes for heterogeneous nonlocal systems.</p>
+          <p>Peridynamics describes fracture and damage through interactions over a finite
+            horizon, and realistic materials such as composites or functionally graded media have
+            spatially varying microstructure and therefore varying interaction ranges. Unlike the
+            fractional Laplacian, nonlocal gradients admit a duality-based framework for
+            Sobolev-type spaces, which is what makes the variational theory work.</p>
+        </div>
+      </article>
+
+      <article class="project has-figure" id="e">
+        <div class="project-letter" aria-hidden="true">E</div>
+        <div>
+          <h3>Approximation classes for evolutionary PDEs</h3>
+          <p>This work develops direct estimates and approximation classes for adaptive
+            time-stepping and space-time finite element methods, combining Jackson- and Whitney-type
+            estimates, anisotropic Besov smoothness and near-best approximation algorithms.</p>
+          <p>The aim is to understand which regularity conditions are sufficient — and ultimately
+            necessary — for a prescribed convergence rate.</p>
+          <p>For <em>s</em> &gt; 0 the class 𝔸<sup><em>s</em></sup> consists of the functions
+            whose best <em>N</em>-term approximation error decays as <em>N</em><sup>−<em>s</em></sup>,
+            with <em>N</em> standing for the degrees of freedom and hence for the computational cost.
+            Our first results treat time-marching by Rothe's method and suggest that time-stepping is
+            not optimal here, which is why we now investigate full space-time approximation.</p>
+        </div>
+        <figure class="project-figure">
+          <img src="assets/figures/project-e.png" alt="Refinement of a triangulation: an element marked for subdivision." loading="lazy">
+          <figcaption>Refinement of a triangulation: an element marked for subdivision.</figcaption>
+        </figure>
+      </article>
+
+      <article class="project has-figure" id="f">
+        <div class="project-letter" aria-hidden="true">F</div>
+        <div>
+          <h3>Function spaces and a-priori estimates</h3>
+          <p>Traces, embeddings, weighted smoothness and constructive decompositions are the tools
+            the other projects run on, and a subject in their own right.</p>
+          <p>Using building blocks such as atoms, wavelets or quarks instead of Fourier-analytic
+            techniques should yield a-priori estimates for elliptic PDEs even in complicated scales
+            such as smoothness Morrey spaces.</p>
+          <p>Conventional a-priori estimates rest mainly on Fourier-analytic techniques, which
+            limits the scales of spaces they can reach. A constructive approach should carry them
+            into scales such as smoothness Morrey spaces, where the Fourier methods break down.</p>
+        </div>
+        <figure class="project-figure">
+          <img src="assets/figures/project-f.png" alt="Embeddings on a bounded domain." loading="lazy">
+          <figcaption>Embeddings on a bounded domain.</figcaption>
+        </figure>
+      </article>
+
+      <p class="after-projects"><a class="text-link" href="publications.html">Full list of
+        publications →</a>
+        <a class="text-link back-link" href="#directions"><span aria-hidden="true">↑</span> Back to the overview</a></p>
+    </div>
+  </section>
+
+  <section class="section band" id="network">
+    <div class="container">
+      <h2 class="kicker lg">Scientific network</h2>
+      <ul class="chiprow" aria-label="Countries">
+        <li>Germany</li>
+        <li>Austria</li>
+        <li>Czech Republic</li>
+        <li>Poland</li>
+        <li>Hungary</li>
+        <li>Portugal</li>
+        <li>India</li>
+        <li>USA</li>
+        <li>Argentina</li>
+      </ul>
+      <div class="entries network-list">
+        <div class="entry"><span class="when">Erlangen</span>
+          <p class="what">Julian Billner, Samuel Probst, Nick Schneider, Florá Szemenyei<span class="note">FAU Erlangen-Nürnberg, Germany</span></p></div>
+        <div class="entry"><span class="when">Marburg</span>
+          <p class="what">Stephan Dahlke, Markus Hansen, Christian Rieger<span class="note">Philipps-University Marburg, Germany</span></p></div>
+        <div class="entry"><span class="when">Jena</span>
+          <p class="what">Dorothee D. Haroske, Winfried Sickel<span class="note">Friedrich Schiller University Jena, Germany</span></p></div>
+        <div class="entry"><span class="when">Jena</span>
+          <p class="what">Henning Kempka<span class="note">Ernst-Abbe-Hochschule Jena, Germany</span></p></div>
+        <div class="entry"><span class="when">Würzburg</span>
+          <p class="what">Markus Weimar<span class="note">Julius-Maximilians-Universität Würzburg, Germany</span></p></div>
+        <div class="entry"><span class="when">Kassel</span>
+          <p class="what">Petru Cioica-Licht<span class="note">University of Kassel, Germany</span></p></div>
+        <div class="entry"><span class="when">Freiburg</span>
+          <p class="what">Nadine Große<span class="note">University of Freiburg, Germany</span></p></div>
+        <div class="entry"><span class="when">Berlin</span>
+          <p class="what">Gabriele Steidl<span class="note">TU Berlin, Germany</span></p></div>
+        <div class="entry"><span class="when">Neubrandenburg</span>
+          <p class="what">Gerd Teschke<span class="note">Hochschule Neubrandenburg, Germany</span></p></div>
+        <div class="entry"><span class="when">Linz</span>
+          <p class="what">Mario Ullrich<span class="note">Johannes Kepler University, Austria</span></p></div>
+        <div class="entry"><span class="when">Prague</span>
+          <p class="what">Vladimir Kulbatov, Jan Vybíral<span class="note">Czech Technical University, Czech Republic</span></p></div>
+        <div class="entry"><span class="when">Poznań</span>
+          <p class="what">Leszek Skrzypczak<span class="note">Adam Mickiewicz University, Poland</span></p></div>
+        <div class="entry"><span class="when">Budapest</span>
+          <p class="what">Kristóf Szarvas<span class="note">Eötvös Loránd University, Hungary</span></p></div>
+        <div class="entry"><span class="when">Coimbra</span>
+          <p class="what">Susana D. Moura, Júlio S. Neves<span class="note">University of Coimbra, Portugal</span></p></div>
+        <div class="entry"><span class="when">Mandi</span>
+          <p class="what">Qaiser Jahan<span class="note">Indian Institute of Technology Mandi, India</span></p></div>
+        <div class="entry"><span class="when">Columbus</span>
+          <p class="what">Jan Lang<span class="note">The Ohio State University, USA</span></p></div>
+        <div class="entry"><span class="when">Santa Fe</span>
+          <p class="what">Marcelo Actis, Fernando Gaspoz, Pedro Morin<span class="note">Universidad Nacional del Litoral and CONICET, Argentina</span></p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p>&copy; <span data-year>2026</span> Cornelia Schneider &middot; FAU Erlangen-N&uuml;rnberg</p>
+      <p>Cauerstra&szlig;e 11 &middot; 91058 Erlangen &middot; Germany</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:cornelia.schneider@fau.de">Email</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="files/Schneider_CV.pdf">CV</a>
+      <a href="https://scholar.google.de/citations?user=gXnBGWkAAAAJ&amp;hl=de">Google Scholar</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
