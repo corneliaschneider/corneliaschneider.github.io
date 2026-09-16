@@ -583,7 +583,9 @@ figcaption { margin-top: 8px; color: var(--muted); font-size: .86rem; }
 /* The research diagram stays legible on phones by scrolling sideways
    instead of shrinking below a readable size. */
 .scroll-x { overflow-x: auto; }
-.scroll-x img, .scroll-x svg { min-width: 620px; }
+.scroll-x img, .scroll-x svg { min-width: 700px; }
+/* the hint only makes sense where the diagram really overflows */
+.scroll-hint { display: none; }
 
 /* ---------- footer ---------- */
 
@@ -617,15 +619,33 @@ figcaption { margin-top: 8px; color: var(--muted); font-size: .86rem; }
 @media (max-width: 620px) {
   body { font-size: 16px; }
   .container { width: min(calc(100% - 32px), var(--content)); }
+  /* On phones the hero stops behaving like a wide banner: the portrait sits
+     at the top in its own fixed area, the text below it on the dark ground.
+     aspect-ratio and max-height from the desktop rule must both be undone,
+     otherwise the hero collapses to a 140 px strip and clips its content. */
   .hero {
+    aspect-ratio: auto;
     min-height: 0;
-    align-items: end;
+    max-height: none;
+    display: block;
+    /* exactly the colour the portrait gradient ends in, so there is no seam */
+    background: rgb(19,21,24);
+  }
+  .hero::before {
+    content: "";
+    display: block;
+    aspect-ratio: 0.82;
     background-image:
-      linear-gradient(0deg, rgba(19,21,24,.97) 0%, rgba(19,21,24,.90) 40%, rgba(19,21,24,.28) 68%, rgba(19,21,24,.02) 100%),
+      linear-gradient(0deg, rgba(19,21,24,1) 0%, rgba(19,21,24,.86) 14%, rgba(19,21,24,.12) 42%, rgba(19,21,24,0) 70%),
       url("hero-portrait-narrow.jpg");
+    background-size: cover;
     background-position: 50% top;
   }
-  .hero-content { width: 100%; padding: 300px 0 42px; }
+  .hero-content { width: 100%; padding: 0 0 40px; margin-top: -54px; }
+  .hero h1 { font-size: clamp(2rem, 9vw, 2.6rem); }
+  .hero .lead { font-size: 1rem; }
+  .button-row { margin-top: 22px; }
+  .button-row .button { flex: 1 1 auto; justify-content: center; }
   .hero .lead { max-width: none; }
   .section { padding-block: 48px; }
   .card-grid { grid-template-columns: 1fr; }
@@ -642,6 +662,7 @@ figcaption { margin-top: 8px; color: var(--muted); font-size: .86rem; }
   .callout { padding: 22px; }
   .highlight-block { padding: 20px 18px 22px; }
   .photo-band-img { aspect-ratio: 1.2; background-image: url("beach-narrow.jpg"); }
+  .scroll-hint { display: block; margin-top: 4px; font-style: italic; }
   .footer-inner { display: block; }
   .footer-links { margin-top: 16px; }
 }
