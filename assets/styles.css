@@ -368,6 +368,19 @@ a.card:hover .card-more { color: var(--accent-dark); }
   color: var(--muted); font-size: .85rem;
 }
 
+/* language marker for courses taught in German */
+.lang { color: var(--muted); font-size: .85rem; font-weight: 400; white-space: nowrap; }
+
+/* small link to a course announcement PDF */
+.doc-tag {
+  display: inline-block; margin-left: 8px; padding: 1px 9px;
+  border: 1px solid #E2CBCD; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent-dark);
+  font-size: .74rem; font-weight: 600; text-decoration: none;
+  vertical-align: 1px; white-space: nowrap;
+}
+.doc-tag:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
 /* ---------- full-bleed image band ---------- */
 
 .image-band {
