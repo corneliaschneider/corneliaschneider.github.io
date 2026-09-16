@@ -73,6 +73,8 @@ assets/
   figures/project-a.png         figures beside the research projects A, B, C, E, F
 files/
   Schneider_CV.pdf         your CV (the only CV linked from the site)
+sitemap.xml         list of the five pages, for search engines
+robots.txt          allows all crawlers, points to the sitemap
 ```
 
 To publish a new version of the CV, replace `files/Schneider_CV.pdf` with the new
@@ -94,3 +96,26 @@ whole site.
 The site deliberately has no news section. If you want one later, the simplest
 form is a `news.html` built from the same page skeleton plus a nav entry in each
 of the five HTML files.
+
+## Being found by search engines
+
+Every page carries a canonical URL, Open Graph tags and, on the start page, a
+schema.org `Person` record with the links to FAU, Google Scholar, arXiv and
+zbMATH. `sitemap.xml` and `robots.txt` are in the repository root.
+
+After the site is live:
+
+1. Open <https://search.google.com/search-console>, add a property of type
+   "URL prefix" with `https://corneliaschneider.github.io/` and verify it
+   (choose "HTML tag" and paste the tag into the `<head>` of `index.html`).
+2. Use "URL inspection" on the start page and press "Request indexing".
+3. Under "Sitemaps", submit `sitemap.xml`.
+4. Bing has the same thing at <https://www.bing.com/webmasters>.
+
+Then add links from pages that already rank: the FAU person page, Google
+Scholar ("Homepage"), arXiv and ORCID. Incoming links from those decide the
+ranking far more than anything in the HTML.
+
+If the search result for your name still shows an outdated page, that page has
+to be updated or removed at its source. Ranking itself cannot be set; it follows
+from links and from how often people click your page.
