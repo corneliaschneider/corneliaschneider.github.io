@@ -85,7 +85,7 @@
         <a class="card" href="#a">
           <span class="card-label">A</span>
           <h3>Regularity of PDEs</h3>
-          <p>Sobolev and Besov regularity on non-smooth domains and manifolds, with a view toward
+          <p>Sobolev and Besov regularity on non-smooth domains and manifolds, with a view towards
             adaptive approximation.</p>
           <span class="card-more">Project A <span aria-hidden="true">&darr;</span></span>
         </a>
@@ -146,8 +146,9 @@
           <p>The Besov regularity is usually obtained via weighted Sobolev (Kondratiev) spaces,
             whose weight measures the distance to the singular set of the domain, while non-adaptive
             schemes are governed by regularity in fractional Sobolev spaces. For elliptic problems
-            this picture is essentially complete; for hyperbolic conservation laws, regularity
-            results are so far limited to the one-dimensional case.</p>
+            the picture is essentially complete. Much less is known in the parabolic setting,
+            whereas for hyperbolic conservation laws regularity results are so far limited to the
+            one-dimensional case.</p>
         </div>
         <figure class="project-figure">
           <img src="assets/figures/project-a.png" alt="Besov versus Sobolev smoothness in the DeVore–Triebel diagram: the adaptive and the uniform approximation line." loading="lazy">
@@ -172,8 +173,9 @@
             visible, which is what makes the dimension-independent rates provable.</p>
         </div>
         <figure class="project-figure">
-          <img src="assets/figures/project-b.png" alt="A deep ReLU network realising the basis functions." loading="lazy">
-          <figcaption>A deep ReLU network realising the basis functions.</figcaption>
+          <img src="assets/figures/project-b.png" alt="A deep ReLU network realising linear combinations of the basis functions." loading="lazy">
+          <figcaption>A deep ReLU network realising linear combinations of the basis
+            functions.</figcaption>
         </figure>
       </article>
 
@@ -185,13 +187,13 @@
             temporal variable. I investigate their connection with Besov spaces of dominating mixed
             smoothness, where the achievable rate no longer depends on the spatial dimension, and
             compare them with uniform tensor-product and time-marching methods.</p>
-          <p>The programme begins on product domains and extends toward non-smooth geometries such
+          <p>The programme begins on product domains and extends towards non-smooth geometries such
             as <em>L</em>-shaped domains and the Fichera corner.</p>
           <p>Adaptive methods reach a rate <em>O</em>(<em>N</em><sup>−α/<em>d</em></sup>) that
             still degrades with the spatial dimension <em>d</em>, whereas tensor-wavelet schemes reach
             <em>O</em>(<em>N</em><sup>−α</sup>). The comparison with non-adaptive schemes is delicate,
             since those are governed by Sobolev rather than Besov spaces of dominating mixed
-            smoothness, a far more restrictive condition.</p>
+            smoothness, and the relation between these two scales is itself hard to pin down.</p>
         </div>
         <figure class="project-figure">
           <img src="assets/figures/project-c.png" alt="The Fichera corner, a model domain with edge and vertex singularities." loading="lazy">
@@ -199,29 +201,34 @@
         </figure>
       </article>
 
-      <article class="project" id="d">
+      <article class="project has-figure" id="d">
         <div class="project-letter" aria-hidden="true">D</div>
         <div>
           <h3>Nonlocal gradients and variable-order models</h3>
-          <p>Motivated by peridynamics and heterogeneous materials, I study nonlocal gradients with
-            anisotropic kernels, spatially varying smoothness and variable integrability. These
-            models lead to new spaces of nonlocal Sobolev type and to questions about embeddings,
-            compactness and existence.</p>
-          <p>A central goal is to quantify the nonlocal-to-local limit with explicit rates and to
-            develop adaptive numerical schemes for heterogeneous nonlocal systems.</p>
+          <p>Motivated by peridynamics and heterogeneous materials, we plan to study nonlocal
+            gradients with spatially varying smoothness and variable integrability (and with
+            anisotropic kernels). Such models lead to new spaces of nonlocal Sobolev type and to
+            questions about embeddings, compactness and existence.</p>
+          <p>A central goal is to quantify the nonlocal-to-local limit with explicit rates.</p>
           <p>Peridynamics describes fracture and damage through interactions over a finite
             horizon, and realistic materials such as composites or functionally graded media have
             spatially varying microstructure and therefore varying interaction ranges. Unlike the
             fractional Laplacian, nonlocal gradients admit a duality-based framework for
             Sobolev-type spaces, which is what makes the variational theory work.</p>
         </div>
+        <figure class="project-figure">
+          <img src="assets/figures/project-d.png" alt="A body with nonlocal interactions: a point x interacts with all points inside its horizon of radius delta(x); below, the same body carrying a spatially varying smoothness s(x) and a variable integrability p(x)." loading="lazy">
+          <figcaption>Nonlocal interaction over a horizon <em>δ</em>(<em>x</em>), with spatially
+            varying smoothness <em>s</em>(<em>x</em>) and variable integrability
+            <em>p</em>(<em>x</em>).</figcaption>
+        </figure>
       </article>
 
       <article class="project has-figure" id="e">
         <div class="project-letter" aria-hidden="true">E</div>
         <div>
           <h3>Approximation classes for evolutionary PDEs</h3>
-          <p>This work develops direct estimates and approximation classes for adaptive
+          <p>This work develops direct (and inverse) estimates and approximation classes for adaptive
             time-stepping and space-time finite element methods, combining Jackson- and Whitney-type
             estimates, anisotropic Besov smoothness and near-best approximation algorithms.</p>
           <p>The aim is to understand which regularity conditions are sufficient — and ultimately
@@ -243,7 +250,7 @@
         <div>
           <h3>Function spaces and a-priori estimates</h3>
           <p>Traces, embeddings, weighted smoothness and constructive decompositions are the tools
-            the other projects run on, and a subject in their own right.</p>
+            the other projects run on, and subjects in their own right.</p>
           <p>Using building blocks such as atoms, wavelets or quarks instead of Fourier-analytic
             techniques should yield a-priori estimates for elliptic PDEs even in complicated scales
             such as smoothness Morrey spaces.</p>
@@ -271,7 +278,6 @@
         <li>Austria</li>
         <li>Czech Republic</li>
         <li>Poland</li>
-        <li>Hungary</li>
         <li>Portugal</li>
         <li>India</li>
         <li>USA</li>
@@ -283,7 +289,7 @@
         <div class="entry"><span class="when">Marburg</span>
           <p class="what">Stephan Dahlke, Markus Hansen, Christian Rieger<span class="note">Philipps-University Marburg, Germany</span></p></div>
         <div class="entry"><span class="when">Jena</span>
-          <p class="what">Dorothee D. Haroske, Winfried Sickel<span class="note">Friedrich Schiller University Jena, Germany</span></p></div>
+          <p class="what">Dorothee D. Haroske, Winfried Sickel, Kristóf Szarvas<span class="note">Friedrich Schiller University Jena, Germany</span></p></div>
         <div class="entry"><span class="when">Jena</span>
           <p class="what">Henning Kempka<span class="note">Ernst-Abbe-Hochschule Jena, Germany</span></p></div>
         <div class="entry"><span class="when">Würzburg</span>
@@ -302,8 +308,6 @@
           <p class="what">Vladimir Kulbatov, Jan Vybíral<span class="note">Czech Technical University, Czech Republic</span></p></div>
         <div class="entry"><span class="when">Poznań</span>
           <p class="what">Leszek Skrzypczak<span class="note">Adam Mickiewicz University, Poland</span></p></div>
-        <div class="entry"><span class="when">Budapest</span>
-          <p class="what">Kristóf Szarvas<span class="note">Eötvös Loránd University, Hungary</span></p></div>
         <div class="entry"><span class="when">Coimbra</span>
           <p class="what">Susana D. Moura, Júlio S. Neves<span class="note">University of Coimbra, Portugal</span></p></div>
         <div class="entry"><span class="when">Mandi</span>
