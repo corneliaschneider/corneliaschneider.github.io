@@ -368,6 +368,9 @@ a.card:hover .card-more { color: var(--accent-dark); }
   color: var(--muted); font-size: .85rem;
 }
 
+/* explanatory subtitle after a course name */
+.course-sub { color: var(--muted); font-size: .9rem; font-weight: 400; }
+
 /* language marker for courses taught in German */
 .lang { color: var(--muted); font-size: .85rem; font-weight: 400; white-space: nowrap; }
 
